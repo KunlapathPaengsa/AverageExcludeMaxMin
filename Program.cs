@@ -38,4 +38,9 @@
 
         return avergae;
     }
+
+    public double AverageSmall(int[] salary)
+    {
+        return (double)(salary.Sum() - salary.Min() - salary.Max()) / (salary.Count() - 2);
+    }
 }
